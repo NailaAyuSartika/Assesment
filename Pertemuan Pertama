@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int umur;
+int afriza;
+char Nama[25];
+int main() {
+    printf("Masukkan Umur =");
+    scanf("%d",&umur);
+    
+    printf("\n");
+    if (umur >= 6 && umur <= 15 ){
+        printf("Maaf umur kamu belum mencukupi");
+    }
+    else if (umur >= 16 && umur <= 27 ){
+        printf("Selamat datang\n");
+    }
+    else if (umur >= 28 && umur <= 37 ){
+        printf("Selamat datang tapi berhati hatilah karna kamu sudah tua");
+    }
+    else {
+        printf("Yang kapan kapan aja yaaa");
+    }
+    scanf("%d", &afriza);
+    printf("%d", afriza);
+
+    return 0;
+}
