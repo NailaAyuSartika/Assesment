@@ -1,0 +1,11 @@
+#include <stdio.h>
+int angka;
+
+int main() {
+    printf("Masukan angka = ");
+    scanf("%d", &angka);
+    if(angka > 10){
+        printf("adalah angka anda %d", angka);
+        return 0;
+    }
+}
