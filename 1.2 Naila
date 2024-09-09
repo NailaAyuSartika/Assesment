@@ -1,0 +1,29 @@
+#include <stdio.h>
+char nama[50];
+int Tahun_Kelahiran;
+int main() {
+    printf("Masukkan nama Anda = ");
+    scanf("%s", &nama); 
+    printf("Hallo, %s\n", nama); 
+    
+    printf("Masukan Tahun Kelahiran Anda = ");
+    scanf("%d", &Tahun_Kelahiran);
+     
+     if (Tahun_Kelahiran >= 1946 && Tahun_Kelahiran <= 1964){
+         printf("Woow berarti kamu adalah generasi baby Boomer yang lahir pada tahun 1946-1964 \n");
+     }
+     else if (Tahun_Kelahiran >= 1965 && Tahun_Kelahiran <= 1980){
+         printf("Hmmm berarti kamu adalah generasi X yang lahir pada tahun 1965-1981 \n");
+     }
+     else if (Tahun_Kelahiran >= 1981 && Tahun_Kelahiran <= 1996){
+         printf("Omagaa berarti kamu adalah generasi y atau milenial yang lahir pada tahun 1981-1996 \n");
+     }
+     else if (Tahun_Kelahiran >= 1997 && Tahun_Kelahiran <= 2012){
+         printf("yeay berarti kamu adalah generasi Z yang lahir pada tahun 1965-1981 kita segenerasi oii \n");
+     }
+     else {
+         printf("Hmmmmm berarti antara kamu generasi sepuh kalo engga ya generasi skibidi hehe \n");
+     }
+
+    return 0;
+}
