@@ -1,0 +1,37 @@
+
+#include <stdio.h>
+float angka;
+
+void Reamur(){
+   float Reamur = angka * 4/5 ;
+   printf("Hasil Reamurnya =  %f \n",Reamur);
+}
+void Fahrenhelt(){
+   float Fahrenhelt= (angka * 9/5)+ 32 ;
+   printf("Hasil Fahrenheltnya = %f \n", Fahrenhelt);
+}
+void Kelvin(){
+   float Kelvin = angka + 273;
+   printf("Hasil Kelvin = %f \n",Kelvin);
+}
+
+int main() {
+  printf("Masukan Input =");
+  scanf("%f", &angka);
+  for(int i=0; i<11;i++){
+      printf("%d", i);
+      printf(". ");
+      int x = i % 3;
+      if (x == 1){
+          Reamur();
+      }
+      else if ( x == 2){
+          Fahrenhelt();
+      }
+      else {
+          Kelvin();
+      }
+  }
+
+    return 0;
+}
